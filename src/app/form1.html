@@ -1,0 +1,98 @@
+<div style="text-align:center">
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
+</div>
+<div style="align-content:center">
+    <div class="container" style="align-content:center">
+        <div class="row col-md-12" >
+            <div class="card w-75">
+                <h5 class="card-header">Mon site de location de maison</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Localisation</h5>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 my-1">
+                                <label for="address">Adresse :</label>
+                                <input type="text" name="address" class="form-control" id="inputAddress" placeholder="Rue 33 , Avenue Germaine, Essos">
+                            </div>
+                            <div class="form-group col-md-6 my-1">
+                                <label for="surface">Surface habitable :</label>
+                                <div class="input-group">
+                                    <input type="number" name="surface" min="1" step="1" class="form-control" >
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">m²</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="card-title">Interieur</h5>
+                        
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <div class="form-group">
+                                    <label for="room">Nombre de pièces</label>
+                                    <input type="number" name="room" min="1" step="1" class="form-control" id="inputAddress">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <div class="form-group">
+                                    <label for="bedroom">Nombre de chambre à coucher</label>
+                                    <input type="number" name="bedroom" min="1" step="1" class="form-control" id="inputAddress">
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Cuisine équipée :
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="kitchenType" id="kitchenType1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                Oui
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="kitchenType" id="kitchenType2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                Non
+                                </label>
+                            </div>
+                        </div>
+
+                        <h5 class="card-title">Status</h5>
+
+                        <div class="form-group">
+                            Type de maison :
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="houseType" id="houseType1" value="option1" checked>
+                                <label class="form-check-label" for="houseType1">
+                                    A louer
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="houseType" id="houseType2" value="option2">
+                                <label class="form-check-label" for="houseType2">
+                                    A vendre
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-7">
+                                <label for="inputCity">Date d'entrée prévue :</label>
+                                <input type="date" name="date" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-6"> 
+            
+                            </div>
+                            <div class="col-md-8">
+                                <button type="submit" class="btn btn-primary form-control">Valider</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
